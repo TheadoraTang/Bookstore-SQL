@@ -3,15 +3,15 @@ import pytest
 from fe import conf
 from fe.access.new_seller import register_new_seller
 from fe.access import book
-import uuid
+import time
 
 
 class TestAddBook:
     @pytest.fixture(autouse=True)
     def pre_run_initialization(self):
         # do before test
-        self.seller_id = "test_add_books_seller_id_{}".format(str(uuid.uuid1()))
-        self.store_id = "test_add_books_store_id_{}".format(str(uuid.uuid1()))
+        self.seller_id = "test_add_books_seller_id_{}".format(time.time())
+        self.store_id = "test_add_books_store_id_{}".format(time.time())
         self.password = self.seller_id
         self.seller = register_new_seller(self.seller_id, self.password)
 
@@ -31,6 +31,7 @@ class TestAddBook:
     def test_error_non_exist_store_id(self):
         for b in self.books:
             # non exist store id
+            print(b)
             code = self.seller.add_book(self.store_id + "x", 0, b)
             assert code != 200
 

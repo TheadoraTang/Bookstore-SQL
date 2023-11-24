@@ -288,7 +288,6 @@ class User(db_conn.DBConn):
         return 200, "ok"
 
     def login(self, user_id: str, password: str, terminal: str) -> (int, str, str):
-        token = ""
         cursor = None
         try:
             code, message = self.check_password(user_id, password)

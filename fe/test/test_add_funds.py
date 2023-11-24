@@ -1,12 +1,12 @@
 import pytest
-import uuid
+import time
 from fe.access.new_buyer import register_new_buyer
 
 
 class TestAddFunds:
     @pytest.fixture(autouse=True)
     def pre_run_initialization(self):
-        self.user_id = "test_add_funds_{}".format(str(uuid.uuid1()))
+        self.user_id = "test_add_funds_{}".format(time.time())
         self.password = self.user_id
         self.buyer = register_new_buyer(self.user_id, self.password)
         yield

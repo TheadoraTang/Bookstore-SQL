@@ -202,6 +202,7 @@ class Buyer(db_conn.DBConn):
         self, user_id: str, store_id: str, id_and_count: [(str, int)]
     ) -> (int, str, str):
         order_id = ""
+        cursor = None
         try:
             if not self.user_id_exist(user_id):
                 return error.error_non_exist_user_id(user_id) + (order_id,)
@@ -255,13 +256,15 @@ class Buyer(db_conn.DBConn):
         except BaseException as e:
             logging.info("530, {}".format(str(e)))
             return 530, "{}".format(str(e)), ""
-
+        finally:
+            if cursor:
+                cursor.close()
         return 200, "ok", order_id
 
     def payment(self, user_id: str, password: str, order_id: str) -> (int, str):
-        conn = self.conn
+        cursor = None
         try:
-            cursor = conn.cursor()
+            cursor = self.conn.cursor()
             cursor.execute(
                 "SELECT order_id, user_id, store_id FROM new_order WHERE order_id = %s",
                 (order_id,),
@@ -314,15 +317,17 @@ class Buyer(db_conn.DBConn):
                 return error.error_not_sufficient_funds(order_id)
 
             cursor.execute(
-                "UPDATE user set balance = balance - %s"
+                "UPDATE `user` SET balance = balance - %s "
                 "WHERE user_id = %s AND balance >= %s",
                 (total_price, buyer_id, total_price),
             )
+
             if cursor.rowcount == 0:
                 return error.error_not_sufficient_funds(order_id)
 
             cursor.execute(
-                "UPDATE user set balance = balance + %s" "WHERE user_id = %s",
+                "UPDATE `user` set balance = balance + %s "
+                "WHERE user_id = %s",
                 (total_price, buyer_id),
             )
 
@@ -330,28 +335,34 @@ class Buyer(db_conn.DBConn):
                 return error.error_non_exist_user_id(buyer_id)
 
             cursor.execute(
-                "DELETE FROM new_order WHERE order_id = %s", (order_id,)
+                "DELETE FROM `new_order` WHERE order_id = %s", (order_id,)
             )
             if cursor.rowcount == 0:
                 return error.error_invalid_order_id(order_id)
 
             cursor.execute(
-                "DELETE FROM new_order_detail where order_id = %s", (order_id,)
+                "DELETE FROM `new_order_detail` where order_id = %s", (order_id,)
             )
             if cursor.rowcount == 0:
                 return error.error_invalid_order_id(order_id)
 
-            conn.commit()
+            self.conn.commit()
 
         except pymysql.Error as e:
             return 528, "{}".format(str(e))
 
         except BaseException as e:
+            print("Exception:", e)
             return 530, "{}".format(str(e))
-
+        # except Exception as e:
+        #     print("Exception:", e)
+        finally:
+            if cursor:
+                cursor.close()
         return 200, "ok"
 
     def add_funds(self, user_id, password, add_value) -> (int, str):
+        cursor = None
         try:
             cursor = self.conn.cursor()
             cursor.execute(
@@ -376,5 +387,7 @@ class Buyer(db_conn.DBConn):
             return 528, "{}".format(str(e))
         except BaseException as e:
             return 530, "{}".format(str(e))
-
+        finally:
+            if cursor:
+                cursor.close()
         return 200, "ok"

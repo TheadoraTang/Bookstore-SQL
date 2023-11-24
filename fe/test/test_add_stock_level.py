@@ -3,14 +3,13 @@ import pytest
 from fe import conf
 from fe.access.new_seller import register_new_seller
 from fe.access import book
-import uuid
-
+import time
 
 class TestAddStockLevel:
     @pytest.fixture(autouse=True)
     def pre_run_initialization(self):
-        self.user_id = "test_add_book_stock_level1_user_{}".format(str(uuid.uuid1()))
-        self.store_id = "test_add_book_stock_level1_store_{}".format(str(uuid.uuid1()))
+        self.user_id = "test_add_user_{}".format(time.time())
+        self.store_id = "test_add_store_{}".format(time.time())
         self.password = self.user_id
         self.seller = register_new_seller(self.user_id, self.password)
 
@@ -50,5 +49,7 @@ class TestAddStockLevel:
     def test_ok(self):
         for b in self.books:
             book_id = b.id
-            code = self.seller.add_stock_level(self.user_id, self.store_id, book_id, 10)
+            code = self.seller.add_stock_level(
+                self.user_id, self.store_id, book_id, 10
+            )
             assert code == 200

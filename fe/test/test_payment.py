@@ -1,3 +1,5 @@
+import time
+
 import pytest
 
 from fe.access.buyer import Buyer
@@ -19,9 +21,9 @@ class TestPayment:
 
     @pytest.fixture(autouse=True)
     def pre_run_initialization(self):
-        self.seller_id = "test_payment_seller_id_{}".format(str(uuid.uuid1()))
-        self.store_id = "test_payment_store_id_{}".format(str(uuid.uuid1()))
-        self.buyer_id = "test_payment_buyer_id_{}".format(str(uuid.uuid1()))
+        self.seller_id = "test_pay_seller_{}".format(time.time())
+        self.store_id = "test_pay_store_{}".format(time.time())
+        self.buyer_id = "test_pay_buyer_{}".format(time.time())
         self.password = self.seller_id
         gen_book = GenBook(self.seller_id, self.store_id)
         ok, buy_book_id_list = gen_book.gen(
@@ -61,6 +63,7 @@ class TestPayment:
         assert code == 200
         code = self.buyer.payment(self.order_id)
         assert code != 200
+        print(code)
 
     def test_repeat_pay(self):
         code = self.buyer.add_funds(self.total_price)

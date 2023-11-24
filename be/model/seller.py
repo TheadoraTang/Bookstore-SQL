@@ -91,6 +91,7 @@ class Seller(db_conn.DBConn):
         book_json_str: str,
         stock_level: int,
     ):
+        cursor = None
         try:
             if not self.user_id_exist(user_id):
                 return error.error_non_exist_user_id(user_id)
@@ -98,8 +99,8 @@ class Seller(db_conn.DBConn):
                 return error.error_non_exist_store_id(store_id)
             if self.book_id_exist(store_id, book_id):
                 return error.error_exist_book_id(book_id)
-
-            self.cursor.execute(
+            cursor = self.conn.cursor()
+            cursor.execute(
                 "INSERT into store(store_id, book_id, book_info, stock_level)"
                 "VALUES (%s, %s, %s, %s)",
                 (store_id, book_id, book_json_str, stock_level),
@@ -109,11 +110,15 @@ class Seller(db_conn.DBConn):
             return 528, "{}".format(str(e))
         except BaseException as e:
             return 530, "{}".format(str(e))
+        finally:
+            if cursor:
+                cursor.close()
         return 200, "ok"
 
     def add_stock_level(
         self, user_id: str, store_id: str, book_id: str, add_stock_level: int
     ):
+        cursor = None
         try:
             if not self.user_id_exist(user_id):
                 return error.error_non_exist_user_id(user_id)
@@ -121,8 +126,8 @@ class Seller(db_conn.DBConn):
                 return error.error_non_exist_store_id(store_id)
             if not self.book_id_exist(store_id, book_id):
                 return error.error_non_exist_book_id(book_id)
-
-            self.cursor.execute(
+            cursor = self.conn.cursor()
+            cursor.execute(
                 "UPDATE store SET stock_level = stock_level + %s "
                 "WHERE store_id = %s AND book_id = %s",
                 (add_stock_level, store_id, book_id),
@@ -132,6 +137,9 @@ class Seller(db_conn.DBConn):
             return 528, "{}".format(str(e))
         except BaseException as e:
             return 530, "{}".format(str(e))
+        finally:
+            if cursor:
+                cursor.close()
         return 200, "ok"
 
     def create_store(self, user_id: str, store_id: str) -> (int, str):
