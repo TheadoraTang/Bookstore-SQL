@@ -1,4 +1,5 @@
 import logging
+import time
 import uuid
 import random
 import threading
@@ -32,7 +33,7 @@ class Payment:
 
 class Workload:
     def __init__(self):
-        self.uuid = str(uuid.uuid1())
+        self.uuid = time.time()
         self.book_ids = []
         self.buyer_ids = []
         self.store_ids = []

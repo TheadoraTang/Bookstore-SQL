@@ -77,7 +77,7 @@ class BookDB:
             book.content = row[14]
             tags = row[15]
 
-            picture = row[16]
+            # picture = row[16]
 
             for tag in tags.split("\n"):
                 if tag.strip() != "":
