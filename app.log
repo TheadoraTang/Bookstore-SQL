@@ -1,0 +1,705 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700754912.8014824' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:55:12] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700754988.3782198' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:56:28] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700755089.5398903' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:58:09] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:59:28] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:59:28] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:59:28] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:59:28] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:59:28] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:59:28] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:59:28] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700755168.76472' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [23/Nov/2023 23:59:28] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700755359.3565104' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:02:39] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700755481.2958221' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 17, in shutdown_server
+    func()
+TypeError: 'NoneType' object is not callable
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:04:41] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:39] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:39] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:39] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:39] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:39] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:39] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:40] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700755839.9975247' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:40] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:10:40] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700755882.5437288' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:11:22] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700756118.1125863' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:18] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700756152.6737967' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:15:52] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:root:1406 (22001): Data too long for column 'token' at row 1
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:21:07] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:root:1406 (22001): Data too long for column 'token' at row 1
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:21:07] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:root:1406 (22001): Data too long for column 'token' at row 1
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:21:07] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:root:1406 (22001): Data too long for column 'token' at row 1
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:21:07] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:21:07] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:25:36] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:25:36] "POST /auth/login HTTP/1.1" 200 -
+ERROR:be.serve:Exception on /auth/logout [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 26, in logout
+    code, message = u.logout(user_id=user_id, token=token)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 317, in logout
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:25:36] "[35m[1mPOST /auth/logout HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:25:37] "POST /auth/register HTTP/1.1" 200 -
+ERROR:be.serve:Exception on /auth/login [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 15, in login
+    code, message, token = u.login(
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 290, in login
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:25:37] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:25:37] "POST /auth/register HTTP/1.1" 200 -
+ERROR:be.serve:Exception on /auth/login [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 15, in login
+    code, message, token = u.login(
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 290, in login
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:25:37] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:25:37] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:28:52] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:28:52] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:28:52] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /shutdown [GET]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\venv\lib\site-packages\flask\app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 22, in be_shutdown
+    shutdown_server()
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\serve.py", line 16, in shutdown_server
+    raise RuntimeError("Not running with the Werkzeug Server")
+RuntimeError: Not running with the Werkzeug Server
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:28:52] "[35m[1mGET /shutdown HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700757792.5989165' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:43:12] "GET /shutdown HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:14] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:15] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:15] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:15] "GET /shutdown HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:58] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:58] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:58] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+ERROR:be.serve:Exception on /auth/register [POST]
+Traceback (most recent call last):
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 222, in register
+    token = jwt_encode(user_id, terminal)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 191, in jwt_encode
+    return encoded.decode('UTF-8')
+AttributeError: 'str' object has no attribute 'decode'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 35, in register
+    code, message = u.register(user_id=user_id, password=password)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 234, in register
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:58] "[35m[1mPOST /auth/register HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:46:58] "GET /shutdown HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:02] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:02] "POST /auth/login HTTP/1.1" 200 -
+ERROR:be.serve:Exception on /auth/logout [POST]
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 26, in logout
+    code, message = u.logout(user_id=user_id, token=token)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 317, in logout
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:02] "[35m[1mPOST /auth/logout HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:03] "POST /auth/register HTTP/1.1" 200 -
+ERROR:be.serve:Exception on /auth/login [POST]
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 15, in login
+    code, message, token = u.login(
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 290, in login
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:03] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:03] "POST /auth/register HTTP/1.1" 200 -
+ERROR:be.serve:Exception on /auth/login [POST]
+Traceback (most recent call last):
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 2051, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1501, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\pythonProject\venv\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\view\auth.py", line 15, in login
+    code, message, token = u.login(
+  File "D:\txh\×ÀÃæ\ECNU  DaSE\code\Database\Bookstore-SQL\be\model\user.py", line 290, in login
+    cursor.close()
+UnboundLocalError: local variable 'cursor' referenced before assignment
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:03] "[35m[1mPOST /auth/login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:03] "GET /shutdown HTTP/1.1" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "POST /auth/unregister HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "POST /auth/register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "[31m[1mPOST /auth/unregister HTTP/1.1[0m" 401 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "POST /auth/register HTTP/1.1" 200 -
+ERROR:root:1062 (23000): Duplicate entry 'test_register_user_1700758138.0438173' for key 'user.PRIMARY'
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "[35m[1mPOST /auth/register HTTP/1.1[0m" 512 -
+INFO:werkzeug:127.0.0.1 - - [24/Nov/2023 00:48:58] "GET /shutdown HTTP/1.1" 200 -
