@@ -63,3 +63,18 @@ def error_authorization_fail():
 
 def error_and_message(code, message):
     return code, message
+
+def error_not_paid_book():
+    return 520, error_code[520]
+
+
+def error_book_has_sent():
+    return 521, error_code[521]
+
+
+def error_book_has_not_sent():
+    return 522, error_code[522]
+
+
+def error_book_has_received():
+    return 523, error_code[523]

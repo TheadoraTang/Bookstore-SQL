@@ -346,6 +346,12 @@ class Buyer(db_conn.DBConn):
             if cursor.rowcount == 0:
                 return error.error_invalid_order_id(order_id)
 
+            cursor.execute(
+                "INSERT INTO `new_order_paid` (order_id, user_id, store_id, book_status, price) "
+                "VALUES (%s, %s, %s, 1, %s)",
+                (order_id, buyer_id, store_id, total_price),
+            )
+
             self.conn.commit()
 
         except pymysql.Error as e:

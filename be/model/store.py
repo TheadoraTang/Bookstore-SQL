@@ -154,32 +154,12 @@ class Store:
                 "picture BLOB)"
             )
 
-            # cursor.execute(
-            #     """
-            #     CREATE TABLE IF NOT EXISTS stores (
-            #         store_id VARCHAR(255),
-            #         book_id VARCHAR(255),
-            #         tags VARCHAR(255),
-            #         pictures BLOB,
-            #         id VARCHAR(255),
-            #         title VARCHAR(255),
-            #         author VARCHAR(255),
-            #         publisher VARCHAR(255),
-            #         original_title VARCHAR(255),
-            #         translator VARCHAR(255),
-            #         pub_year VARCHAR(255),
-            #         pages INTEGER,
-            #         price INTEGER,
-            #         binding VARCHAR(255),
-            #         isbn VARCHAR(255),
-            #         author_intro VARCHAR(255),
-            #         book_intro VARCHAR(255),
-            #         content TEXT,
-            #         stock_level INTEGER,
-            #         PRIMARY KEY (store_id, book_id)
-            #     )
-            #     """
-            # )
+            cursor.execute(
+                "CREATE TABLE IF NOT EXISTS new_order_paid( "
+                "order_id VARCHAR(255), store_id VARCHAR(255), user_id VARCHAR(255), "
+                "book_status INTEGER, price INTEGER, "
+                "PRIMARY KEY(order_id, user_id))"
+            )
 
             conn.commit()
         except mysql.connector.Error as e:
