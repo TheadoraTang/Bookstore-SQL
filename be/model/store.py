@@ -123,9 +123,18 @@ class Store:
                 """
             )
 
+            # cursor.execute(
+            #     "CREATE TABLE IF NOT EXISTS new_order( "
+            #     "order_id VARCHAR(255) PRIMARY KEY, store_id VARCHAR(255), user_id VARCHAR(255), "
+            # )
+
             cursor.execute(
-                "CREATE TABLE IF NOT EXISTS new_order( "
-                "order_id VARCHAR(255) PRIMARY KEY, user_id VARCHAR(255), store_id VARCHAR(255))"
+                "CREATE TABLE IF NOT EXISTS new_order ("
+                "order_id VARCHAR(255) PRIMARY KEY, "
+                "store_id VARCHAR(255), "
+                "user_id VARCHAR(255), "
+                "book_status INTEGER, "
+                "order_time DATETIME)"
             )
 
             cursor.execute(

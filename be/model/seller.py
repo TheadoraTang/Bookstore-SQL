@@ -106,10 +106,7 @@ class Seller(db_conn.DBConn):
                 (store_id, book_id, book_json_str, stock_level),
             )
             self.conn.commit()
-        except mysql.connector.Error as e:
-            return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
+
         finally:
             if cursor:
                 cursor.close()
@@ -133,10 +130,6 @@ class Seller(db_conn.DBConn):
                 (add_stock_level, store_id, book_id),
             )
             self.conn.commit()
-        except mysql.connector.Error as e:
-            return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
         finally:
             if cursor:
                 cursor.close()
@@ -155,10 +148,7 @@ class Seller(db_conn.DBConn):
                 (store_id, user_id),
             )
             self.conn.commit()
-        except mysql.connector.Error as e:
-            return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
+
         finally:
             if cursor:
                 cursor.close()

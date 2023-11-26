@@ -216,26 +216,8 @@ class User(db_conn.DBConn):
             logging.error(str(e))
             return False
 
-    # def register(self, user_id: str, password: str):
-    #     cursor = None
-    #     try:
-    #         terminal = "terminal_{}".format(str(time.time()))
-    #         token = jwt_encode(user_id, terminal)
-    #         cursor = self.conn.cursor()
-    #         cursor.execute(
-    #             "INSERT INTO user (user_id, password, balance, token, terminal) "
-    #             "VALUES (%s, %s, %s, %s, %s);",
-    #             (user_id, password, 0, token, terminal),
-    #         )
-    #         self.conn.commit()
-    #     except mysql.connector.Error as e:
-    #         logging.error(e)
-    #         return error.error_exist_user_id(user_id)
-    #     finally:
-    #         if cursor:
-    #             cursor.close()
-    #     return 200, "ok"
     def register(self, user_id: str, password: str):
+        cursor = None
         try:
             terminal = "terminal_{}".format(str(time.time()))
             token = jwt_encode(user_id, terminal)
@@ -246,12 +228,7 @@ class User(db_conn.DBConn):
                 (user_id, password, 0, token, terminal),
             )
             self.conn.commit()
-        except mysql.connector.Error as e:
-            logging.error(e)
-            return 528, "{}".format(str(e))
-        except BaseException as e:
-            logging.error(e)
-            return 530, "{}".format(str(e))
+
         finally:
             cursor.close()
 
@@ -305,10 +282,7 @@ class User(db_conn.DBConn):
                 return error.error_authorization_fail() + ("",)
 
             self.conn.commit()
-        except mysql.connector.Error as e:
-            return 528, "{}".format(str(e)), ""
-        except BaseException as e:
-            return 530, "{}".format(str(e)), ""
+
         finally:
             if cursor:
                 cursor.close()
@@ -334,10 +308,7 @@ class User(db_conn.DBConn):
                 return error.error_authorization_fail()
 
             self.conn.commit()
-        except mysql.connector.Error as e:
-            return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
+
         finally:
             if cursor:
                 cursor.close()
@@ -357,10 +328,7 @@ class User(db_conn.DBConn):
                 self.conn.commit()
             else:
                 return error.error_authorization_fail()
-        except mysql.connector.Error as e:
-            return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
+
         finally:
             if cursor:
                 cursor.close()
@@ -388,10 +356,7 @@ class User(db_conn.DBConn):
                 return error.error_authorization_fail()
 
             self.conn.commit()
-        except mysql.connector.Error as e:
-            return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
+
         finally:
             if cursor:
                 cursor.close()

@@ -187,6 +187,8 @@
 #             return 530, "{}".format(str(e))
 #
 #         return 200, "ok"
+from datetime import datetime
+
 import pymysql
 import json
 import logging
@@ -243,19 +245,21 @@ class Buyer(db_conn.DBConn):
                     (uid, book_id, count, price),
                 )
 
+            # cursor.execute(
+            #     "INSERT INTO new_order(order_id, store_id, user_id) "
+            #     "VALUES(%s, %s, %s);",
+            #     (uid, store_id, user_id),
+            # )
+            # self.conn.commit()
+            order_id = uid
+            now_time = datetime.utcnow()
             cursor.execute(
-                "INSERT INTO new_order(order_id, store_id, user_id) "
-                "VALUES(%s, %s, %s);",
-                (uid, store_id, user_id),
+                "INSERT INTO new_order(order_id, store_id, user_id, book_status, order_time) "
+                "VALUES(%s, %s, %s, 2, %s);",
+                (uid, store_id, user_id, now_time),
             )
             self.conn.commit()
-            order_id = uid
-        except pymysql.Error as e:
-            logging.info("528, {}".format(str(e)))
-            return 528, "{}".format(str(e)), ""
-        except BaseException as e:
-            logging.info("530, {}".format(str(e)))
-            return 530, "{}".format(str(e)), ""
+
         finally:
             if cursor:
                 cursor.close()
@@ -266,16 +270,20 @@ class Buyer(db_conn.DBConn):
         try:
             cursor = self.conn.cursor()
             cursor.execute(
-                "SELECT order_id, user_id, store_id FROM new_order WHERE order_id = %s",
+                "SELECT order_id, store_id, user_id, book_status, order_time FROM new_order WHERE order_id = %s",
                 (order_id,),
             )
+            # cursor.execute(
+            #     "SELECT order_id, store_id, user_id FROM new_order WHERE order_id = %s",
+            #     (order_id,),
+            # )
             row = cursor.fetchone()
             if row is None:
                 return error.error_invalid_order_id(order_id)
 
             order_id = row[0]
-            buyer_id = row[1]
-            store_id = row[2]
+            buyer_id = row[2]
+            store_id = row[1]
 
             if buyer_id != user_id:
                 return error.error_authorization_fail()
@@ -354,14 +362,6 @@ class Buyer(db_conn.DBConn):
 
             self.conn.commit()
 
-        except pymysql.Error as e:
-            return 528, "{}".format(str(e))
-
-        except BaseException as e:
-            print("Exception:", e)
-            return 530, "{}".format(str(e))
-        # except Exception as e:
-        #     print("Exception:", e)
         finally:
             if cursor:
                 cursor.close()
@@ -389,10 +389,7 @@ class Buyer(db_conn.DBConn):
                 return error.error_non_exist_user_id(user_id)
 
             self.conn.commit()
-        except pymysql.Error as e:
-            return 528, "{}".format(str(e))
-        except BaseException as e:
-            return 530, "{}".format(str(e))
+
         finally:
             if cursor:
                 cursor.close()
