@@ -123,10 +123,6 @@ class Store:
                 """
             )
 
-            # cursor.execute(
-            #     "CREATE TABLE IF NOT EXISTS new_order( "
-            #     "order_id VARCHAR(255) PRIMARY KEY, store_id VARCHAR(255), user_id VARCHAR(255), "
-            # )
 
             cursor.execute(
                 "CREATE TABLE IF NOT EXISTS new_order ("
@@ -141,26 +137,6 @@ class Store:
                 "CREATE TABLE IF NOT EXISTS new_order_detail( "
                 "order_id VARCHAR(255), book_id VARCHAR(255), count INTEGER, price INTEGER,  "
                 "PRIMARY KEY(order_id, book_id))"
-            )
-
-            cursor.execute(
-                "CREATE TABLE IF NOT EXISTS books( "
-                "id VARCHAR(255) PRIMARY KEY,"
-                "title VARCHAR(255),"
-                "author VARCHAR(255),"
-                "publisher VARCHAR(255),"
-                "original_title VARCHAR(255),"
-                "translator VARCHAR(255),"
-                "pub_year VARCHAR(255),"
-                "pages VARCHAR(255),"
-                "price VARCHAR(255),"
-                "binding VARCHAR(255),"
-                "isbn VARCHAR(255),"
-                "author_intro TEXT,"
-                "book_intro TEXT,"
-                "content TEXT,"
-                "tags VARCHAR(255),"
-                "picture BLOB)"
             )
 
             cursor.execute(

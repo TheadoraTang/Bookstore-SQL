@@ -12,17 +12,6 @@ conn = mysql.connector.connect(
         )
 cursor = conn.cursor()
 
-        # Insert test data into the MySQL tables
-cursor.execute(
-            """
-            INSERT INTO books (id, title, author, publisher, original_title, translator, pub_year, pages,
-                               price, binding, isbn, author_intro, book_intro, content, tags, picture)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """,
-            ('001', 'kunchongji', 'book', 'book', 'book', 'book', 'book', 'book', 'book', 'book', 'book', 'book',
-             'book', 'book', 'book', json.dumps([]))  # 将列表转换为 JSON 格式字符串
-        )
-
 cursor.execute(
             """
             INSERT INTO store (store_id, book_id, tags, pictures, id, title, author, publisher, original_title,

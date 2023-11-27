@@ -42,10 +42,10 @@ class SearchBooks(db_conn.DBConn):
 
 
             # 获取总结果数
-            cursor.execute(f"SELECT COUNT(*) FROM books WHERE {query}", tuple(params))
+            cursor.execute(f"SELECT COUNT(*) FROM store WHERE {query}", tuple(params))
             total_results = cursor.fetchone()[0]
 
-            cursor.execute(f"SELECT title FROM books WHERE {query}", tuple(params))
+            cursor.execute(f"SELECT title FROM store WHERE {query}", tuple(params))
             book_titles = [book[0] for book in cursor.fetchall()]
 
             if total_results == 0:
