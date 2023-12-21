@@ -244,13 +244,6 @@ class Buyer(db_conn.DBConn):
                     "VALUES(%s, %s, %s, %s);",
                     (uid, book_id, count, price),
                 )
-
-            # cursor.execute(
-            #     "INSERT INTO new_order(order_id, store_id, user_id) "
-            #     "VALUES(%s, %s, %s);",
-            #     (uid, store_id, user_id),
-            # )
-            # self.conn.commit()
             order_id = uid
             now_time = datetime.utcnow()
             cursor.execute(
@@ -273,10 +266,6 @@ class Buyer(db_conn.DBConn):
                 "SELECT order_id, store_id, user_id, book_status, order_time FROM new_order WHERE order_id = %s",
                 (order_id,),
             )
-            # cursor.execute(
-            #     "SELECT order_id, store_id, user_id FROM new_order WHERE order_id = %s",
-            #     (order_id,),
-            # )
             row = cursor.fetchone()
             if row is None:
                 return error.error_invalid_order_id(order_id)
